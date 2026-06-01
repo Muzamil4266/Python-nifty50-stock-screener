@@ -4,7 +4,7 @@
 Complete Comprehensive Analysis of the Institutional Momentum Engine (Version 6.0)
 This document provides an exhaustive, deep-dive architectural and mathematical breakdown of the Nifty 50 Institutional Momentum Engine (Version 6.0). It covers the software's structural philosophy, operational data lifecycle, core filtering safeguards, multi-factor scoring matrix, mathematical foundations, and real-world execution protocol.
 
-
+![NIFTY50 Stocks Screener](NIFTY50-STOCKS-SCREENER.png)
 
 1. Introduction: What the Program is For
 
