@@ -407,6 +407,131 @@ The Nifty 50 Institutional Momentum Engine (Version 6.0) is a robust, production
 Through its multi-stage framework—incorporating network spoofing, local serialization caching, strict RSI and Beta risk boundaries, spike penalties, and trend-reversal guards—the program ensures that capital is systematically directed toward steady, high-probability, naturally compounding leaders of the Nifty 50 index.
 
 
+🔴PYTHON OUTPUT EXAMPLE WHEN YOU RUN THE PROGRAM IN IDLE PYTHON:
+
+
+
+📈  NIFTY 50 INSTITUTIONAL MOMENTUM ENGINE - NATURAL GROWTH SCANNER
+================================================================================
+⚙️  ENGINE WEIGHTS: Smoothness (30%) | Alpha (25%) | Velocity (20%) | Consistency (15%) | Volume (10%)
+
+📅  ACTION PLAN
+   • BUY  DATE : Monday, June 01, 2026
+   • SELL DATE : Wednesday, July 01, 2026  (Holding ~30 Days)
+================================================================================
+
+⏳  Step 1/3 — Historical data …
+
+🌐  Fetching historical OHLCV from Yahoo Finance …
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no timezone found
+
+1 Failed download:
+['TATAMOTORS.NS']: possibly delisted; no timezone found
+   ✅  49 Nifty50 tickers downloaded on attempt 1
+   💾  Cached to nifty50_cache.json
+
+⏳  Step 2/3 — Live prices …
+   🔴  Fetching live intraday prices …HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+$TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+ done (49/50)
+
+🔬  Step 3/3 — Quantitative engine …
+
+   📊  Filter summary: 3 removed by RSI>65 | 12 removed by Beta>1.3 | 21 removed by negative velocity | 13 passed
+
+🏆  TOP 10 NATURAL GROWTH LEADERS
+
+#1 | HINDALCO
+   • Current Price      : ₹1,142.60
+   • Expected Rise      : +6.2%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 87.9%
+   • RSI / Beta         : 62.5  /  0.78
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+#2 | CIPLA
+   • Current Price      : ₹1,390.00
+   • Expected Rise      : +2.6%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 61.3%
+   • RSI / Beta         : 59.3  /  0.60
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+#3 | BAJAJ-AUTO
+   • Current Price      : ₹10,356.00
+   • Expected Rise      : +2.5%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 59.9%
+   • RSI / Beta         : 58.6  /  1.02
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+#4 | APOLLOHOSP  ⚠️ SHORT-TERM REVERSAL — price falling last 5d
+   • Current Price      : ₹8,105.50
+   • Expected Rise      : +5.4%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 59.1%
+   • RSI / Beta         : 58.2  /  0.59
+   • Primary Driver     : High Trend Smoothness — clean linear trajectory confirming organic institutional accumulation.
+
+#5 | KOTAKBANK
+   • Current Price      : ₹377.10
+   • Expected Rise      : +0.1%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 36.6%
+   • RSI / Beta         : 51.2  /  1.03
+   • Primary Driver     : High Trend Smoothness — clean linear trajectory confirming organic institutional accumulation.
+
+#6 | WIPRO
+   • Current Price      : ₹206.38
+   • Expected Rise      : +0.2%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 30.8%
+   • RSI / Beta         : 58.1  /  0.53
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+#7 | DIVISLAB  ⚠️ SHORT-TERM REVERSAL — price falling last 5d
+   • Current Price      : ₹6,556.00
+   • Expected Rise      : +0.6%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 29.8%
+   • RSI / Beta         : 50.4  /  0.58
+   • Primary Driver     : High Trend Smoothness — clean linear trajectory confirming organic institutional accumulation.
+
+#8 | JSWSTEEL  ⚠️ SHORT-TERM REVERSAL — price falling last 5d
+   • Current Price      : ₹1,299.00
+   • Expected Rise      : +0.5%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 26.4%
+   • RSI / Beta         : 51.6  /  1.19
+   • Primary Driver     : High Trend Smoothness — clean linear trajectory confirming organic institutional accumulation.
+
+#9 | TATACONSUM  ⚠️ SHORT-TERM REVERSAL — price falling last 5d
+   • Current Price      : ₹1,141.70
+   • Expected Rise      : +0.4%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 23.1%
+   • RSI / Beta         : 50.5  /  0.46
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+#10 | TECHM
+   • Current Price      : ₹1,542.30
+   • Expected Rise      : +0.0%  (Spike-Adjusted Velocity × Smoothness)
+   • Probability of Rise: 18.9%
+   • RSI / Beta         : 57.9  /  0.49
+   • Primary Driver     : Strong Alpha decoupling — stock outperforming Nifty 50 index driven by sustained institutional buying pressure.
+
+--------------------------------------------------------------------------------
+⏱️  Executed : 2026-06-01 15:22:11
+📂  Cache    : C:\Shoby deathless laptop folder\nifty50_cache.json
+⚖️  Allocation: Equal-weight ~10% per position across Top 10
+🛡️  Filters  : RSI(Wilder,full-history) < 65 | Beta(90d aligned) < 1.3 | Spike>6% cuts velocity+smoothness | 5d reversal = -30% score
+--------------------------------------------------------------------------------
+
+⚠️  DISCLAIMER: Educational & research use only. Not financial advice.
+
+
+
+
+
+
+
+
+
+
+
 
 🔴A VERY VERY SIMPLE EXPLANATION OF EVERYTHING IN THIS PYTHON PROGRAM.
 
